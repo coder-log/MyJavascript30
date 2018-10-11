@@ -5,7 +5,7 @@ body {
 
 .keys{
 
-    display:flex;
+    display:flex-wrap;
     flex-direction:row;
     align-items: center;
     justify-content: center;
