@@ -36,3 +36,19 @@ body {
     color: #ffcc60;
 }
 
+.key-pressed{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #ffcc60;
+        background-color: hsla(360, 100%, 0%, 0.40);
+        color:white;
+        font-size: 3em;
+        width:2em;
+        height: auto;
+        margin:5px;
+        padding:auto;    
+        border-radius: 5px;
+}

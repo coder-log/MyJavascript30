@@ -1,5 +1,5 @@
 document.getElementById("keyA").addEventListener("click", playDrum);
-window.addEventListener("keypress", keyPressed);
+window.addEventListener("keydown", keyPressed);
 
 function playDrum() {
     return console.log("Click")  
@@ -8,8 +8,11 @@ function playDrum() {
 function keyPressed(event) {
     var key = event.key;
     const audio = document.querySelector('#keyA-audio');
+    const keyDiv = document.querySelector('#keyA');
+    audio.currentTime ="0";
     audio.play();
-        return console.log(key,audio)
+    keyDiv.classList.replace("key","key-pressed");
+        return console.log(key, keyDiv, audio);
 }
 
 
